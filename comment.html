@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hourly Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(156, 156, 156);
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .comments-section {
+            padding: 40px;
+            padding-top: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        .comments-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .comment {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .comment h4 {
+            margin: 0;
+        }
+        .comment p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .comment-form {
+            margin-top: 30px;
+        }
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+            font-size: 1em;
+        }
+        .comment-form input[type="text"], .comment-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .comment-form button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .comment-form button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .header{
+        color: white;
+        text-decoration: none;
+       }
+       .header:hover{
+        padding: 8px;
+            border: solid white 1px;
+            background-color: grey;
+       }
+       a:hover{
+            background-color: grey;
+            padding: 8px;
+            border: solid white;
+        }
+        .nav-bar{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html" class="header">beli buku termurah hanya disini!!</a></h1><hr style="width: 300px; border: solid 2px; color: darkgray; margin-bottom: 15px;">
+    </header>
+
+<div class="nav-bar">
+<nav>
+    <a href="index.html" style="color: white;">Beranda</a>
+    <a href="perpustakaan.html" style="color: white;">Produk</a>
+    <a href="comment.html" style="color: white;">Kontak</a>
+</nav>
+</div>
+
+<section class="comments-section">
+<h2>Ulasan Anda</h2>
+    <!-- Form Ulasan -->
+    <div class="comment-form">
+        <form action="submit_review.html" method="POST">
+            <input type="text" name="nama" placeholder="Nama" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="ulasan" rows="5" placeholder="Tulis ulasan di sini..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; Hourly2007™</p>
+</footer>
+
+</body>
+</html>
